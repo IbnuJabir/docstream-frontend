@@ -12,7 +12,7 @@ import Rheumatology from "../../../assets/images/Rheumatology.png";
 function Services() {
   return (
     <>
-      <h1 className="services_title">Services</h1>
+      <h1 id="services" className="services_title">Services</h1>
       <section className="services">
         <div className="service_left">
           <div className="service_card selected">

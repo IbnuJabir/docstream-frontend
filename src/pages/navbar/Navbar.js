@@ -12,10 +12,9 @@ function Navbar() {
 
   const dispatch = useDispatch();
   const onButtonContainerClick = useCallback(() => {
-    if(isLoggedIn){
+    if (isLoggedIn) {
       navigate("/my-appointments");
-    }else{
-
+    } else {
       navigate("/appointment");
     }
   }, [navigate]);
@@ -106,8 +105,7 @@ function Navbar() {
           className={({ isActive }) =>
             isActive ? "navbar-link isActive" : "navbar-link"
           }
-          to="/home"
-          onClick={toggleMobileMenu}
+          to="#home"
         >
           Home
         </NavLink>
@@ -115,8 +113,7 @@ function Navbar() {
           className={({ isActive }) =>
             isActive ? "navbar-link isActive" : "navbar-link"
           }
-          to="/aboutus"
-          onClick={toggleMobileMenu}
+          to="#aboutus"
         >
           About Us
         </NavLink>
@@ -124,8 +121,7 @@ function Navbar() {
           className={({ isActive }) =>
             isActive ? "navbar-link isActive" : "navbar-link"
           }
-          to="/services"
-          onClick={toggleMobileMenu}
+          to="#services"
         >
           Services
         </NavLink>
@@ -133,8 +129,7 @@ function Navbar() {
           className={({ isActive }) =>
             isActive ? "navbar-link isActive" : "navbar-link"
           }
-          to="/doctors"
-          onClick={toggleMobileMenu}
+          to="#doctors"
         >
           Doctors
         </NavLink>
@@ -142,8 +137,7 @@ function Navbar() {
           className={({ isActive }) =>
             isActive ? "navbar-link isActive" : "navbar-link"
           }
-          to="/contact"
-          onClick={toggleMobileMenu}
+          to="#contact"
         >
           Contact
         </NavLink>
@@ -153,12 +147,12 @@ function Navbar() {
               LOGOUT
             </button>
           ) : (
-              <button
-                className="nav_btn signup_btn "
-                onClick={() => navigate("/login")}
-              >
-                SIGNUP
-              </button>
+            <button
+              className="nav_btn signup_btn "
+              onClick={() => navigate("/login")}
+            >
+              SIGNUP
+            </button>
           )}
         </div>
       </div>

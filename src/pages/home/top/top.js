@@ -3,7 +3,7 @@ import "./top.css";
 import avatar from "../../../assets/images/avatar.png";
 function Top() {
   return (
-    <div className="top">
+    <div id="home" className="top">
       <div className=" description">
         <h2>
           Bridging <span>Healthcare</span> Beyond Distance.
